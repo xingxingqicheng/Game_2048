@@ -10,23 +10,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.wuzhe.game_2048.MainActivity">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Score"
+            android:text="@string/score"
+            android:textSize="40sp"
+            android:layout_weight="1"
             >
         </TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvscore"
+            android:layout_weight="2"
             >
         </TextView>
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新游戏"
+            android:layout_weight="2"
+            android:id="@+id/button"
+            android:layout_gravity="right" />
+
+
     </LinearLayout>
     <com.example.wuzhe.game_2048.Game_View
         android:layout_width="match_parent"
